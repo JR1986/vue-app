@@ -1,11 +1,14 @@
 <template>
   <main>
     <p>test</p>
+    <p v-if="showExtra">show Extra</p>
   </main>
 </template>
 
 <script>
-export default {};
+export default {
+  props: ['showExtra']
+};
 </script>
 
 <style>

@@ -3,6 +3,8 @@
     <h1>{{ event.title }}</h1>
     <p>{{ event.time }} on {{ event.date }} @ {{ event.location }}</p>
     <p>{{ event.description }}</p>
+    
+    <p>I show this id as extra</p>
   </div>
 </template>
 
