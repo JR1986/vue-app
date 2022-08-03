@@ -1,10 +1,12 @@
 <template>
   <div v-if="event">
     <h1>{{ event.title }}</h1>
-    <p>{{ event.time }} on {{ event.date }} @ {{ event.location }}</p>
-    <p>{{ event.description }}</p>
-    
-    <p>I show this id as extra</p>
+    <div id="nav">
+      <router-link :to="{name: 'EventDetails'}">Detail</router-link>
+      <router-link :to="{name: 'EventRegister'}">Register</router-link>
+      <router-link :to="{name: 'EventEdit'}">Edit</router-link>
+    </div>
+    <router-view :event="event"></router-view>
   </div>
 </template>
 
